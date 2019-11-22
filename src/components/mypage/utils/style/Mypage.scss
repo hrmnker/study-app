@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import "ReuseLibrary";
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+
+}
+
+//页头样式
+.PersonalCenter-header{
+  @extend %display-between;
+  width: 100%;
+  line-height: 6.5vh;
+  border-bottom: 1px solid #ddd;
+  font-size: 2.6vh;
+  background-color: #f8f8f8;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  .PersonalCenter-close{
+    @extend %display-align    //占位符
+}
+  .self-close{
+   margin: 0  1.5vw 0 3.3vw;
+   @extend .PersonalCenter-close ;  //继承符
+   .close-header{
+     background-image:url("image/close.png") ;
+     background-position: center center;
+     background-repeat: no-repeat;
+     width: 3.7vh;
+     height: 3.7vh;
+     background-size: 70%;
+  }
+}
+
+  .PersonalCenter-with{
+    @extend .PersonalCenter-close;
+    padding-right: 3.3vw;
+}
+}
+
+
+//主体部分
+
+.PersonalCenter-edit{
+  @include display(flex,space-between,center);
+  height: 14vh;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 2.3vh;
+  background-color: white;
+  cursor:pointer;
+  .left-View {
+    @include display-align(flex,center); //混合宏
+    .PersonalCenter-Avatar {
+      width: 8vh;
+      height: 8vh;
+      border: 1px solid #f5f5f5;
+      border-radius: 50%;
+      margin: 0 3vw;
+    }
+    .Edit-profile{
+      display:flex;
+      flex-direction:row;
+      padding-top: 0.7vh;
+      font-size: 1.9vh;
+    }
+  }
+
+
+
+  .self-View{
+    @extend %display-align;
+    height: 100%;
+    font-size: 2em;
+    margin-right: 1.8vw;
+  }
+
+}
+
+
+.PersonalCenter-stock{
+  height: 19vh;
+  font-size: 2vh;
+  .Subset-stock{
+    height: 100%;
+    margin: 2.5vh 7vw;
+    border-bottom: 1px solid #e2e2e2;
+    .stock{
+      @include display(flex,space-around,center);
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      box-shadow: 10px 5px 10px #aeaeae;
+      .stock-map{
+        @include display(flex,space-around,center);
+        font-size: 4.5vh;
+        padding-bottom: 0.6em;
+      }
+    }
+  }
+}
+
+.PersonalCenter-list{
+   margin-top: 2rem;
+   font-size: 2.3vh;
+   background-color: white;
+   padding-bottom: 2.3vh;
+  .Subset-advisory{
+    @extend  %display-between;
+    height: 8.8vh;
+    .left-mig{
+    @extend %display-align;
+    height: 100%;
+    }
+    .phone-map{
+      @extend .left-mig;
+      margin: 0 3vw;
+    }
+    .arrow-map{
+      @extend %display-align;
+      height: 100%;
+      margin-right: 1.8vw;
+      font-size: 2em;
+    }
+  }
+}
+
+
+.van-cell__title, .van-cell__value {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 3vh 8vw;
+}
+
+//以下是我的 收藏、课程样式
+
+.course-main{
+  margin: 3vh 8vw;
+  font-size: 2.3vh;
+
+  .course-row{
+    height: 14vh;
+    border: 1px solid #bfb8b8;
+    display:flex;
+    flex: 1;
+    padding: 10px;
+    .maintop{
+      width: 40%;
+      padding: 5px;
+
+      img{
+        width: 100%;
+        height: 100%
+      }
+    }
+    .main-bottom{
+      width: 60%;
+      padding: 5px;
+      .introduce{
+        font-size: 2.3vh;
+        height: 75%
+      }
+      .element{
+        float: right;
+        height: 25%
+      }
+
+    }
+  }
+}
+
+
+

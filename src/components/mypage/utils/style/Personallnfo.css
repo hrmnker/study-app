@@ -1,0 +1,302 @@
+@charset "UTF-8";
+.PersonalInfo-list .PersonalInfo-avatar, .PersonalInfo-list .PersonalInfo-name, .verify-get {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.PersonalInfo-list {
+  font-size: 3.9vw;
+  background-color: white; }
+  .PersonalInfo-list .PersonalInfo-avatar {
+    height: 23vw;
+    margin-left: 3vw;
+    border-bottom: 1px solid #dddddd; }
+    .PersonalInfo-list .PersonalInfo-avatar .Avatar-img {
+      width: 16vw;
+      height: 16vw;
+      border: 1px solid #f5f5f5;
+      border-radius: 50%;
+      margin: 0 4vw; }
+  .PersonalInfo-list .PersonalInfo-name {
+    margin-left: 4.5vw;
+    height: 14.6vw;
+    border-bottom: 1px solid #dddddd; }
+    .PersonalInfo-list .PersonalInfo-name .alter-name {
+      display: flex;
+      align-items: center; }
+    .PersonalInfo-list .PersonalInfo-name .PersonalInfo-arrow {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 9vw; }
+  .PersonalInfo-list .PersonalInfo-gender {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 9vw;
+    margin: 0 1.8vw 0 0; }
+  .PersonalInfo-list .PersonalInfo-grade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4.5vw;
+    height: 14.6vw; }
+  .PersonalInfo-list .alter-name {
+    display: flex;
+    align-items: center; }
+    .PersonalInfo-list .alter-name input {
+      border: none;
+      width: 13vw;
+      padding: 2.5vw 0 2.5vw 56vw; }
+  .PersonalInfo-list .PersonalInfo-arrow {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    margin-right: 1.8vw; }
+
+.van-cell {
+  padding: 0;
+  font-size: 4.6vw;
+  background-color: #f2f2f2; }
+
+.row-list:checked {
+  background-color: #1d7ad9;
+  color: white; }
+
+.row-list:active {
+  background-color: #1d7ad9;
+  color: white; }
+
+.van-action-sheet__item, .van-action-sheet__cancel {
+  height: 14vw; }
+
+.van-action-sheet__cancel, .van-action-sheet__item {
+  display: block;
+  width: 100%;
+  font-size: 4.6vw;
+  line-height: 12vw;
+  text-align: center;
+  background-color: #fff;
+  border: 0;
+  border-top: 3px solid #f8f8f8; }
+
+[class*=van-hairline]::after {
+  position: absolute;
+  box-sizing: border-box;
+  /* content: ' '; */
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid #ebedf0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5); }
+
+.van-action-sheet__cancel::before {
+  display: none;
+  height: 0;
+  background-color: white;
+  content: none; }
+
+.gender-get {
+  padding: 14vw 11.5vw;
+  font-size: 3.9vw;
+  display: flex;
+  justify-content: space-between; }
+
+input + label::after {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-left: 6px;
+  content: "";
+  width: 4.4vw;
+  height: 4.4vw;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background: #e8e8e8; }
+
+/*阴影部分插入*/
+input:checked + label::after {
+  width: 4.4vw;
+  height: 4.4vw;
+  box-shadow: 0  0  0  1.4vw  #1d7ad9 inset;
+  background-color: white;
+  border: none; }
+
+#appoint-index, #appoint-two {
+  display: none; }
+
+.male {
+  padding-left: 1vw;
+  padding-right: 0.3vw;
+  font-size: 4.6vw; }
+
+.phone-get {
+  border-radius: 5px;
+  margin: 5vw 5vw;
+  padding: 0.7vw;
+  border: 1px solid #999999;
+  border-right: 1px solid #999999;
+  font-size: 4.6vw; }
+  .phone-get .phone-box {
+    border: 0;
+    padding-left: 1.8vw;
+    background-color: white; }
+
+.verify-get {
+  margin: 5vw 5vw 0 5vw;
+  font-size: 2.3vw; }
+  .verify-get .verify-style {
+    width: 40%;
+    border-radius: 5px;
+    padding: 1vw;
+    border: 1px solid #999999;
+    border-right: 1px solid #999999; }
+    .verify-get .verify-style .verify-box {
+      width: 100%;
+      border: 0;
+      padding-left: 1.8vw;
+      background-color: white; }
+  .verify-get .verify-button {
+    border: 1px solid #dddddd;
+    padding: 2vw 6vw;
+    border-radius: 10em;
+    text-align: center;
+    font-size: 3vw;
+    cursor: pointer;
+    background-color: #1d7ad9;
+    color: white;
+    width: 20vw; }
+
+/* 性别 */
+.van-dialog {
+  width: 80vw;
+  height: 70vw; }
+
+.van-dialog__footer--buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 2.3vh; }
+
+.van-dialog__header {
+  padding-top: 2.8vw;
+  font-size: 4.6vw; }
+
+.van-dialog .van-button {
+  border: 0;
+  font-size: 2.3vh;
+  height: 14vw; }
+
+/*电话号码 */
+.van-hairline--left::after {
+  border-left-width: 1px; }
+
+.van-dialog__footer {
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+  border-top: 0.04667rem solid #f5f5f5; }
+
+.grade-box {
+  width: 80vw;
+  height: 120vw;
+  background: white; }
+  .grade-box .site-grade {
+    width: 100%;
+    text-align: center;
+    margin: 4vw 0;
+    font-size: 100%;
+    font-weight: bold; }
+  .grade-box .primshool {
+    margin: 4vw 0 2vw 2vw;
+    font-size: 90%;
+    font-weight: bold; }
+  .grade-box .row-list {
+    width: 10vw;
+    padding: 1.2vw  4vw;
+    border: 1px solid #1b6199;
+    border-radius: 10em; }
+    .grade-box .row-list {
+      width: 19vw; }
+
+.stage {
+  float: left;
+  width: 70vw;
+  margin-bottom: 4vw;
+  padding-left: 1vw; }
+
+.Margin-1 {
+  padding: 4vw 0 26vw 1vw; }
+
+.grade-list {
+  float: left;
+  border-radius: 10em;
+  margin-left: 10%;
+  margin-bottom: 4vw;
+  width: 20%;
+  height: 8vw;
+  font-size: 3vw;
+  line-height: 8vw;
+  text-align: center;
+  border: 1px solid #1b6199; }
+
+.grade-list-add {
+  background-color: #1b6199;
+  float: left;
+  border-radius: 10em;
+  margin-left: 10%;
+  margin-bottom: 4vw;
+  width: 20%;
+  height: 8vw;
+  font-size: 3vw;
+  line-height: 8vw;
+  text-align: center;
+  border: 1px solid #1b6199; }
+
+.van-popup--center.van-popup--round, .van-dialog {
+  border-radius: 8px; }
+
+ul.nav a {
+  display: block;
+  color: #2b3f00;
+  text-decoration: none;
+  border-bottom: 1px solid #486b02;
+  border-top: 1px solid #e4ffd3;
+  padding: 0.3em 1em; }
+
+/deep/ .van-dialog__header {
+  font-size: 4.6vw;
+  padding-top: 5.6vw;
+  font-weight: 500;
+  text-align: center; }
+
+/deep/ .van-button--large {
+  width: 100%;
+  line-height: 0; }
+
+/deep/ .van-dialog .van-button {
+  border: 0;
+  font-size: 3.9vw;
+  height: 15vw; }
+
+/deep/ .van-dialog__footer--buttons {
+  overflow: hidden;
+  user-select: none; }
+
+/deep/ .van-dialog__footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 4.6vw; }
+
+/deep/ .van-hairline--top::after {
+  /* border-top-width: 0.02667rem; */ }
+
+/*# sourceMappingURL=Personallnfo.css.map */

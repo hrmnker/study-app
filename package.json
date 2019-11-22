@@ -1,0 +1,54 @@
+{
+  "name": "study-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service --host 0.0.0.0 serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vant/touch-emulator": "^1.1.0",
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "fastclick": "^1.0.6",
+    "jquery": "^3.4.1",
+    "qs": "^6.9.1",
+    "vant": "^2.2.7",
+    "vant-weapp": "^1.0.0-beta.0",
+    "vconsole": "^3.3.4",
+    "vue": "^2.6.10",
+    "vue-calendar-component": "^2.8.2",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.12.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "plugins": [
+    "transform-vue-jsx",
+    "transform-runtime",
+    [
+      "import",
+      [
+        {
+          "libraryName": "vant",
+          "style": true
+        }
+      ]
+    ]
+  ]
+}

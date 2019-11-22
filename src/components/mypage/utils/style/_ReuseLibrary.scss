@@ -1,0 +1,45 @@
+@charset "UTF-8";
+//占位符
+
+%display-align{
+  display: flex;
+  align-items: center;
+
+}
+
+%display-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+%display-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+//混合宏
+
+
+@mixin display($first,$twin,$times){
+  display: $first;
+  justify-content: $twin;
+  align-items: $times;
+}
+
+
+
+@mixin display-content($first,$twin){
+  display:$first ;
+  justify-content: $twin;
+}
+
+
+
+@mixin  display-align($first,$twin){
+  display:$first ;
+  align-items:$twin ;
+}
